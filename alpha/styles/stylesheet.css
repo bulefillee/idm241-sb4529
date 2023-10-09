@@ -24,7 +24,7 @@
     align-items: center;
     font-family: 'Champagne & Limousines', Times, serif;
     margin: 1rem;
-    padding: 1rem;
+    padding:1rem;
   }
   
 
@@ -46,14 +46,14 @@
   }
 
   h3{
-    font-size: 3vmin;
-  font-weight: normal;
+    font-size: 3.5vmin;
+  font-weight: bold;
   font-family: 'Champagne & Limousines', Times, serif;
   display: flex;
   }
 
   p{
-    font-size: 2.5vmin;
+    font-size: 3vmin;
     font-weight: normal;
     font-family:  'Quicksand-Regular', Times, serif;
     display: flex;
@@ -100,3 +100,17 @@ footer {
 
 }
 
+@media (max-width: 650px){
+  
+  body{
+    margin: 0.5rem;
+    padding: 0.5rem;
+  }
+
+  img{
+    display: block;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+}
