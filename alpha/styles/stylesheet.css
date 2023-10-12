@@ -26,7 +26,10 @@
     margin: 1rem;
     padding:1rem;
   }
-  
+
+  a:visited {
+    color:rgb(94, 69, 104);
+  }
 
   h1 {
     font-size: 5vmin;
@@ -46,10 +49,18 @@
   }
 
   h3{
-    font-size: 3.5vmin;
+  font-size: 3.5vmin;
   font-weight: bold;
   font-family: 'Champagne & Limousines', Times, serif;
   display: flex;
+  }
+
+  h4{
+    font-size: 3vmin;
+    font-weight: bold;
+    font-family:  'Quicksand-Regular', Times, serif;
+    display: flex;
+    padding-top: 1%;
   }
 
   p{
