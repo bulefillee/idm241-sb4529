@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>IDM241 Alpha</title>
+</head>
+<body>
+    <h1>Alpha Build</h1>
+    <br>
+    <h2>Micro-interaction:</h2>
+    <br>
+
+    <!--Card micro-interaction-->
+
+    <div class="flip-card">
+        
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          
+            <img src="images/assassins_creed.png" alt="assassins_creed" style="width:280px;height:380px;"></div>
+
+        <div class="flip-card-back">
+            <span class="heart-icon">&#9825;</span>
+            <i style="font-size:54px" class="fa">&#xf17a;</i>
+            <div class="card_info">
+          <h1>Assassins Creed</h1> 
+          <p>Standard Edition</p> 
+          <p>$49.99</p>
+        </div>
+
+        </div>
+      </div>
+      
+    </div>
+
+    <!--Micro-interaction details-->
+    <br>
+    <h3>Triggers - </h3>
+    <p>Micro-interaction is triggered by Hovering on & Hovering  off the game card</p>
+
+    <h3>Rules -</h3>
+    
+    <h4>hovering on:<h4>
+    <ul>
+        <li><p>The cursor changes to hand pointer when hovering over within the bounds of the game card</p></li>
+        <li><p>Game card rotates (180 deg) to the back of the card, around the y-axis (flips left to right)</p></li>
+        <li><p>Back of the game card is displayed with 'white outlined heart' icon at top right, White 'windows' icon (middle - center), and card information: title & sub-title & price(bottom - left)</p></li>
+    </ul>
+
+    <h4>hovering off:<h4>
+    <ul>
+        <li><p>The cursor changes from hand pointer to cursor when hovering off the game card</p></li>
+        <li><p>Game card rotates back to the front image side (180 deg), around the y-axis(flips right to left)</p></li>
+    </ul>
+
+    <h3>Feedback - </h3>
+
+    <h4>hovering on:<h4>
+        <ul>
+            <li><p>The cursor changes to hand pointer when hovering over within the bounds of the game card</p></li>
+            <li><p>Game card rotates (180 deg) to the back of the card, around the y-axis (flips left to right)</p></li>
+            <li><p>Back of the game card is displayed with 'white outlined heart' icon at top right, White 'windows' icon (middle - center), and card information: title & sub-title & price(bottom - left)</p></li>
+        </ul>
+    
+    <h4>hovering off:<h4>
+        <ul>
+            <li><p>The cursor changes from hand pointer to cursor when hovering off the game card</p></li>
+            <li><p>Game card rotates back to the front image side (180 deg), around the y-axis(flips right to left)</p></li>
+        </ul>
+    
+
+    <h3>Loops & Modes - </h3>
+    <p>No Loops, a 'white outlined heart' icon, a 'white windows' icon, and card information(title, subtitle & price) appear as modes.</p>
+
+
+    <br>
+
+    <footer> <p>&copy;Sue Batham | 2023</p></footer>
+</body>
+
+</html>
