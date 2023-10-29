@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/stylesheet.css">
+    <title>IDM241 Beta</title>
+    <title>Beta Description</title>
+</head>
+<body>
+    <h1>Beta Description</h1>
+    <br>
+    <h2>Micro-interaction:</h2>
+    
+    <h3>Link -</h3>
+    
+    <p> <a href="https://store.ubisoft.com/us/home/?lang=en_US" target="_blank">Ubisoft Store Website </a></p>
+     <!--Micro-interaction details-->
+     <br>
+     <h3>Triggers - </h3>
+     <p>Micro-interaction for Game card : is triggered by Hovering on & Hovering  off the game card</p>
+     <p>Micro-interaction for Heart icon : is triggered by Hovering on & Hovering  off the heart icon & clicking on the heart icon</p>
+ 
+     <h3>Rules -</h3>
+
+     <h4>Game card - hovering on:<h4>
+     <ul>
+         <li><p>The cursor changes to hand pointer when hovering over within the bounds of the game card</p></li>
+         <li><p>Game card rotates (180 deg) to the back of the card, around the y-axis in a gradient cardholder(flips left to right)</p></li>
+         <li><p>Back of the game card is displayed with 'white outlined heart' icon (top - right), White 'windows' icon (middle - center), and card information: title & sub-title & price(bottom - left)</p></li>
+     </ul>
+ 
+     <h4>Game card - hovering off:<h4>
+     <ul>
+         <li><p>The cursor changes from hand pointer to cursor when hovering off the game card</p></li>
+         <li><p>Game card rotates back to the front image side (180 deg), around the y-axis in a gradient cardholder (flips right to left)</p></li>
+         <li><p>Front of the game card is displayed with the game card image</p></li>
+     </ul>
+
+     <h4>Heart Icon - hovering on:<h4>
+        <ul>
+            <li><p>The cursor changes to hand pointer when hovering over within the bounds of the heart icon</p></li>
+            <li><p>Heart icon is filled with blush pink color fading in</p></li>
+        </ul>
+    
+    <h4>Heart Icon - hovering off:<h4>
+        <ul>
+            <li><p>The cursor changes from hand pointer to cursor when hovering off the heart icon</p></li>
+            <li><p><li><p>Heart icon filled with blush pink color returns to the transparent fill</p></li></p></li>
+        </ul>
+
+    <h4>Heart Icon - on click<h4>
+            <ul>
+                <li><p>The cursor changes from hand pointer to cursor when hovering on the heart icon</p></li>
+                <li><p><li><p>Heart icon filled with blush pink color fading in, as the blush pink enlarges & returns to its existing size with red color (pulse like movement).</p></li></p></li>
+            </ul>
+    
+ 
+     <h3>Feedback - </h3>
+ 
+     <h4>Game card - hovering on:<h4>
+         <ul>
+             <li><p>The cursor changes to hand pointer when hovering over within the bounds of the game card</p></li>
+             <li><p>Game card rotates (180 deg) to the back of the card, around the y-axis in a gradient cardholder(flips left to right)</p></li>
+             <li><p>Back of the game card is displayed with 'white outlined heart' icon (top - right), White 'windows' icon (middle - center), and card information: title & sub-title & price(bottom - left)</p></li>
+         </ul>
+     
+     <h4>Game card - hovering off:<h4>
+         <ul>
+             <li><p>The cursor changes from hand pointer to cursor when hovering off the game card</p></li>
+             <li><p>Game card rotates back to the front image side (180 deg), around the y-axis in a gradient cardholder (flips right to left)</p></li>
+             <li><p>Front of the game card is displayed with the game card image</p></li>
+         </ul>
+    
+         <h4>Heart Icon - hovering on:<h4>
+            <ul>
+                <li><p>The cursor changes to hand pointer when hovering over within the bounds of the heart icon</p></li>
+                <li><p>Heart icon is filled with blush pink color fading in</p></li>
+            </ul>
+        
+        <h4>Heart Icon - hovering off:<h4>
+            <ul>
+                <li><p>The cursor changes from hand pointer to cursor when hovering off the heart icon</p></li>
+                <li><p><li><p>Heart icon filled with blush pink color returns to the transparent fill</p></li></p></li>
+            </ul>
+
+        <h4>Heart Icon - on click<h4>
+            <ul>
+                <li><p>The cursor changes from hand pointer to cursor when hovering on the heart icon</p></li>
+                <li><p><li><p>Heart icon filled with blush pink color fading in, as the blush pink enlarges & returns to its existing size with red color (pulse like movement).</p></li></p></li>
+            </ul>
+        
+     
+ 
+     <h3>Loops & Modes - </h3>
+     <h4>Hover on - Game card:</h4>
+     <p>No Loops, a 'white outlined heart' icon, a 'white windows' icon, and card information (title, subtitle & price) appear as modes.</p>
+     <h4>Hover on - Heart Icon:</h4>
+     <p>No loops, but mode of new color of blush pink fades in while hovering over the heart icon.</p>
+     <h4>Click on - Heart Icon:</h4>
+     <p>No loops, but mode of new color of red fades in, as heart icon size increase and decreases after clicking on the heart icon.</p>
+ 
+     <br>
+ 
+
+
+
+    <h2>Stages of Micro-interactions:</h2>
+
+    <div class="cards_item">
+
+        <div class="card">
+            <div class="card_image"><img src="images/Frame1.png" alt="Stage1"></div>
+            <div class="card_content">
+            <div class="card_title"><h3>Stage 1 - hover off game card</h3></div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card_image"><img src="images/Frame2.png" alt="Stage2"></div>
+            <div class="card_content">
+            <div class="card_title"><h3>Stage 2 - hover on game card</h3></div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card_image"><img src="images/Frame3.png" alt="Stage3"></div>
+            <div class="card_content">
+            <div class="card_title"><h3>Stage 3 - hover on heart icon</h3></div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card_image"><img src="images/Frame2.png" alt="Stage4"></div>
+            <div class="card_content">
+            <div class="card_title"><h3>Stage 4 - hover off heart icon</h3></div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card_image"><img src="images/Frame4.png" alt="Stage5"></div>
+            <div class="card_content">
+            <div class="card_title"><h3>Stage 5 - click on heart icon</h3></div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card_image"><img src="images/Frame5.png" alt="Stage6"></div>
+            <div class="card_content">
+            <div class="card_title"><h3>Stage 6 - hearting: heart icon enlarges</h3></div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card_image"><img src="images/Frame6.png" alt="Stage7"></div>
+            <div class="card_content">
+            <div class="card_title"><h3>Stage 7 - hearted icon</h3></div>
+            </div>
+        </div>
+
+
+<footer> &copy;Sue Batham | 2023 </footer>
+    
+    
+</body>
+</html>
