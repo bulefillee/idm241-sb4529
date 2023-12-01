@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+     <link rel="stylesheet" href="styles/stylesheet.css">
+    <title>Sue Batham IDM241 Final Build</title>
+</head>
+<body>
+    <h1>IDM241 Final Build</h1>
+    <br>
+    <h2>Micro-interaction:</h2>
+    <br>
+
+    <!--Card micro-interaction-->
+
+    <div class="flip-card">
+        
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          
+            <img src="images/assassins_creed.png" alt="assassins_creed"></div>
+
+        <div class="flip-card-back">
+
+            <div class='large-font text-center top-20'>
+                <ion-icon name="heart">
+                  <div class='red-bg'></div>
+                </ion-icon>
+              </div>
+
+            <div class="floating">
+            <img class="windows" src="images/windows.png" alt="windows">
+            </div>
+   
+
+            <div class="card_info">
+          <p class="title">Assassins Creed</p> 
+          <p class="sub-title">Standard Edition</p> 
+          <p class="price">$49.99</p>
+        </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+     <!--Micro-interaction details-->
+     <br>
+     <h3>Triggers - </h3>
+     <p> Game card : Hover on & Hover  off</p>
+     <p>Heart Icon : Hover on & Hover  off</p>
+     <p>Heart Icon : On 1st & 2nd click</p>
+     <p>Windows Icon : Hover on & off</p>
+     <p>Price text Element: Hover on & hover off</p>
+
+ 
+     <h3>Rules -</h3>
+
+     <h4>Game card - hovering on:<h4>
+     <ul>
+
+         <li><p>Game card rotates (180 deg) to the back of the card, around the y-axis in a gradient cardholder(flips left to right).</p></li>
+         <li><p>Back of the game card is displayed with 'white outlined heart' icon (top - right), White 'windows' icon (middle - center), and card information: title & sub-title & price(bottom - left).</p></li>
+     </ul>
+ 
+     <h4>Game card - hovering off:<h4>
+     <ul>
+
+         <li><p>Game card rotates back to the front image side (180 deg), around the y-axis in a gradient cardholder (flips right to left).</p></li>
+         <li><p>Front of the game card is displayed with the game card image.</p></li>
+     </ul>
+
+     <h4>Heart Icon - hovering on:<h4>
+        <ul>
+            <li><p>The cursor changes to hand pointer when hovering over within the bounds of the heart icon.</p></li>
+            <li><p>Heart icon is filled with blush pink color fading in.</p></li>
+        </ul>
+    
+    <h4>Heart Icon - hovering off:<h4>
+        <ul>
+            <li><p>The cursor changes from hand pointer to cursor when hovering off the heart icon.</p></li>
+            <li><p>Heart icon filled with blush pink color fades out, returning to transparent fill.</p></li>
+        </ul>
+
+    <h4>Heart Icon - on 1st click:<h4>
+        <ul>
+            <li><p>Heart icon is filled with blush pink color, then smoothly transitions fading to red (scales up by nearly 10%) & returns to its existing size with red color (pulse like movement).</p></li>
+            <li><p>Database is updated for 1st click for user's favorited game products.</p></li>
+        </ul>
+
+    <h4>Heart Icon - on 2nd click:<h4>
+                <ul>
+                    <li><p>Heart icon filled with red color fades out, and returns to a 'white outlined heart' icon. </p></li>
+                    <li><p>Database is updated for 2st click for user's favorited game products.</p></li>
+                </ul>
+                
+                    
+                
+            
+    <h4>Windows Icon -  Hover on:<h4>
+                    <ul>
+                    
+                        <li><p>Windows icon moves up and down during the animation, lasts for 3 seconds, repeats infinitely while hovering on.</p></li>
+                        <li><p>Animation starts from the original position, moving upward by 10 pixels and returning it to its original position.</p></li>
+                        <li><p>Additionally, a radial shadow effect is triggered on hover, adding a glowing appearance(white color and a blur radius of 30 pixels).</p></li>
+                    </ul>
+    
+    <h4>Windows Icon -  Hover off:<h4>
+            <ul>
+                <li><p>Animation stops and the windows icon returns it to the original position in its original state.</p></li>
+            </ul>
+    
+    <h4>Price text Element - Hover on:</h4>
+    <ul>
+        <li><p>Price text element color changes to golden beige on hover (smoothly transitions with a duration of 0.5 seconds).</p></li>
+        <li><p>A text shadow(white) is seen, creating a glowing effect with multiple layers.</p></li>
+        <li><p>The margin-right and margin-left properties are adjusted on hover, creating a shifting effect while hover on.</p></li>
+    </ul>
+
+    <h4>Price text Element - Hover off:</h4>
+    <ul>
+        <li><p>The price text element will retain its initial size, color, and margin properties (original state).</p></li>
+    </ul>
+
+        
+    
+ 
+     <h3>Feedback - </h3>
+ 
+     <h4>Game card - hovering on:<h4>
+         <ul>
+             <li><p>The cursor changes to hand pointer when hovering over within the bounds of the game card.</p></li>
+             <li><p>Game card rotates (180 deg) to the back of the card, around the y-axis in a gradient cardholder(flips left to right).</p></li>
+             <li><p>Back of the game card is displayed with 'white outlined heart' icon (top - right), White 'windows' icon (middle - center), and card information: title & sub-title & price(bottom - left).</p></li>
+         </ul>
+     
+     <h4>Game card - hovering off:<h4>
+         <ul>
+             <li><p>The cursor changes from hand pointer to cursor when hovering off the game card.</p></li>
+             <li><p>Game card rotates back to the front image side (180 deg), around the y-axis in a gradient cardholder (flips right to left).</p></li>
+             <li><p>Front of the game card is displayed with the game card image.</p></li>
+         </ul>
+    
+         <h4>Heart Icon - hovering on:<h4>
+            <ul>
+                <li><p>The cursor changes to hand pointer when hovering over within the bounds of the heart icon.</p></li>
+                <li><p>Heart icon is filled with blush pink color fading in</p></li>
+            </ul>
+        
+        <h4>Heart Icon - hovering off:<h4>
+            <ul>
+                <li><p>The cursor changes from hand pointer to cursor when hovering off the heart icon.</p></li>
+                <li><p>Heart icon filled with blush pink color fades out, returning to transparent fill.</p></li>
+            </ul>
+
+        <h4>Heart Icon - on 1st click:<h4>
+            <ul>
+                <li><p>Heart icon is filled with blush pink color, then smoothly transitions fading to red (scales up by nearly 10%) & returns to its existing size with red color (pulse like movement).</p></li>
+            </ul>
+
+        <h4>Heart Icon - on 2nd click:<h4>
+                <ul>
+                    <li><p>Heart icon filled with red color fades out, and returns to a 'white outlined heart' icon. </p></li>
+                </ul>
+
+                <h4>Windows Icon -  Hover on:<h4>
+                    <ul>
+                    
+                        <li><p>Windows icon moves up and down during the animation, lasts for 3 seconds, repeats infinitely while hovering on.</p></li>
+                        <li><p>Animation starts from the original position, moving upward by 10 pixels and returning it to its original position.</p></li>
+                        <li><p>Additionally, a radial shadow effect is triggered on hover, adding a glowing appearance(white color and a blur radius of 30 pixels).</p></li>
+                    </ul>
+    
+    <h4>Windows Icon -  Hover off:<h4>
+            <ul>
+                <li><p>Animation stops and the windows icon returns it to the original position in its original state.</p></li>
+            </ul>
+    
+    <h4>Price text Element - Hover on:</h4>
+    <ul>
+        <li><p>Price text element color changes to golden beige on hover (smoothly transitions with a duration of 0.5 seconds).</p></li>
+        <li><p>A text shadow(white) is seen, creating a glowing effect with multiple layers.</p></li>
+        <li><p>The margin-right and margin-left properties are adjusted on hover, creating a shifting effect while hover on.</p></li>
+    </ul>
+
+    <h4>Price text Element - Hover off:</h4>
+    <ul>
+        <li><p>The price text element will retain its initial size, color, and margin properties (original state).</p></li>
+    </ul>
+   
+            
+
+     <h3>Loops & Modes - </h3>
+
+     <h4>Game card:</h4>
+     <p>No Loops, a 'white outlined heart' icon, a 'white windows' icon, and card information (title, subtitle & price) appear as modes.</p>
+     <br>
+     <h4>Heart Icon:</h4>
+     <p>No loops & Modes.</p>
+     <br>
+     <h4>Windows Icon:</h4>
+     <p>No modes, but floating animation loops while hovering on.</p>
+     <br>
+     <h4>Price text Element:</h4>
+     <p>No loops & Modes.</p>
+     <br>
+
+     <h3>Improvements:</h3>
+     <ul>
+    <li>
+     <p>Floating animation with radial shadow for windows icon.</p>
+    </li>
+    <li>
+     <p>Price element multi-layered glowing effect with horizontal shifting.</p>
+    </li>
+     </ul>
+     
+
+    <footer><h4>&copy;Sue Batham | 2023</h4></footer>
+
+    <script>
+        let icon = document.querySelector('ion-icon');
+    icon.onclick = function(){
+      icon.classList.toggle('active');
+    }
+    </script>
+    
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+</body>
+
+</html>

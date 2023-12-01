@@ -1,0 +1,472 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+  }
+
+
+  @font-face {
+    font-family: 'Quicksand-Regular';
+    src: url('../fonts/Quicksand-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Champagne & Limousines';
+    src: url('../fonts/Champagne&Limousines.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  body{
+    background-color: antiquewhite;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Champagne & Limousines', Times, serif;
+    margin: 1rem; 
+    padding:1rem;
+    overflow-x: hidden;
+  }
+
+  .flip-card {
+    width: 280px;
+    height: 380px;
+    margin-left: auto;
+    margin-right: auto;
+    perspective: 1000px;
+    background: linear-gradient(45deg,#061de3, #e306ca);
+    font-family:'Quicksand-Regular', sans-serif;
+    color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    /* cursor: pointer; */
+    
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
+    border-radius: 2rem;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 280px;
+    height: 380px;
+    /* width: 100%;
+    height: 100%; */
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 2rem;
+  }
+  
+  .flip-card-front {
+    background-color:antiquewhite;
+    color: black;
+    border-radius: 2rem;
+  }
+  
+  .flip-card-back {
+    background-color: #000000;
+    color: white;
+    transform: rotateY(180deg);
+    border-radius: 2rem;
+  }
+  
+  img{
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+  }
+
+  .card_info{
+    padding: 20px;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+  }
+
+
+.windows {
+  margin-left: auto;
+  margin-right:auto;
+  margin-top: 30%;
+    width: 20%; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    position: relative;
+    transition: box-shadow 0.3s ease-in-out;
+    border-radius: 0.1rem;
+}
+
+@keyframes floatAnimation {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.windows:hover {
+  animation: floatAnimation 2s infinite alternate;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 1);
+}
+
+
+.price{
+  color: hsl(0, 0%, 92%);
+  font-size: 50px;
+  font-weight:300;
+  font-family:'Quicksand-Regular';
+  letter-spacing: 7px;
+  transition: 0.5s ease-out;
+
+}
+.price:hover {
+  margin-right: 5px;
+}
+.price:hover :after {
+  content: "'";
+}
+.price:hover{
+  margin-left: 30px;
+}
+.price:hover{
+  color: #fff;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff;
+}
+
+  /**
+
+  .container {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 290px;
+    height: 380px;
+    perspective: 800px;
+    background: linear-gradient(45deg,#061de3, #e306ca);
+    font-family:'Quicksand-Regular', sans-serif;
+    color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  **/
+
+
+  h1 {
+    font-size: 5vmin;
+    font-weight: bolder;
+    font-family: 'Champagne & Limousines';
+    justify-content: center;
+    text-align: center;
+    display: flex;
+  }
+
+  h2{
+    font-size: 4vmin;
+    font-weight: bold;
+    font-family: 'Champagne & Limousines', Times, serif;
+    display: flex;
+    padding-bottom: 1rem;
+  }
+
+  h3{
+    font-size: 3.5vmin;
+    font-weight: bold;
+    font-family: 'Champagne & Limousines', Times, serif;
+    display: flex;
+    color: rgb(192, 92, 88)
+  }
+
+  h4{
+    font-size: 3vmin;
+    font-weight: bold;
+    font-family:  'Quicksand-Regular', Times, serif;
+    display: flex;
+    padding-top: 1%;
+  }
+
+  p{
+    font-size: 3vmin;
+    font-weight: normal;
+    font-family:  'Quicksand-Regular', Times, serif;
+    display: flex;
+    margin:1%;
+    padding:0 3% 3% 3%;
+    line-height: 1.4;
+  }
+
+  h5{
+    font-size: 3vmin;
+    font-weight: normal;
+    font-family:  'Quicksand-Regular', Times, serif;
+    display: flex;
+    margin:1%;
+    padding:0 3% 3% 3%;
+    line-height: 1.4;
+  }
+
+  ul{
+    padding:0 3% 0 3%;
+  }
+
+  /* .heart-icon {
+    font-size: 42px;
+    font-weight: 700px;;
+    position: absolute;
+    top: 8px;
+    right: 36px;
+    width: 30px;
+    height: 30px; 
+  } */
+  .large-font{
+    font-size:xxx-large;
+  }
+  .top-20{
+    position:relative;
+    top:5vh;
+    left:18vh;
+  }
+  
+  ion-icon:hover{
+    cursor: pointer;
+    fill:pink;
+    stroke:pink;
+    stroke-width:30;
+    transition:all 0.5s;
+  }
+   
+  ion-icon.active{
+    animation:like 0.5s 1;
+    fill:red;
+    stroke:none;
+  }
+  
+  ion-icon{
+    fill:transparent;
+    stroke:rgb(255, 255, 255);
+    stroke-width:30;
+    transition:all 0.5s;
+  }
+  
+  
+  @-webkit-keyframes like {
+    0%   { transform: scale(1); }
+    90%   { transform: scale(1.2); }
+    100% { transform: scale(1.1); }
+  }
+
+
+  @media (min-width: 1390px){
+
+    .flip-card {
+      border: none;
+      width: 450px;
+      height: 580px;   
+    }
+
+    .flip-card-front, .flip-card-back {
+      position: absolute;
+      width: 450px;
+      height: 580px; 
+     
+    }
+
+    .title, .sub-title, .price{
+      font-size: 26px;
+      display: flex;
+      justify-content: left;
+      text-align:left;
+     
+    }
+
+    /* .heart-icon {
+      font-size: 52px;
+      font-weight: 800px;;
+      position: absolute;
+      top: 18px;
+      right: 46px;
+      width: 40px;
+      height: 40px; 
+    } */
+
+    .large-font{
+      font-size:xxx-large;
+    }
+    .top-20{
+      position:relative;
+      top:5vh;
+      left:14vh;
+    }
+
+  }
+
+  @media(min-width: 1450px){
+    .large-font{
+      font-size: 4em;
+    }
+    .top-20{
+      position:relative;
+      top:5vh;
+      left:155px;
+    }
+
+  }
+
+  @media(min-width: 1390px) and (max-width: 1450px){
+
+  .large-font{
+    font-size: 4em;
+  }
+  .top-20{
+    position:relative;
+    top:4.5vh;
+    left: 150px;
+  }
+}
+
+  @media(min-width: 1250px) and (max-width: 1390px){
+
+    .flip-card {
+      border: none;
+      width: 350px;
+      height: 450px;   
+    }
+
+    .flip-card-front, .flip-card-back {
+      position: absolute;
+      width: 350px;
+      height: 450px;
+     
+    }
+
+    .title, .sub-title, .price{
+      font-size: 24px;
+      font-weight: bolder;
+      display: flex;
+      justify-content: left;
+      text-align:left;
+
+  }
+
+  .large-font{
+    font-size:xxx-large;
+  }
+  .top-20{
+    position:relative;
+    top:4vh;
+    left:125px;
+  }
+}
+
+/* 
+@media(max-width:999px){
+
+  .large-font{
+    font-size:xxx-large;
+  }
+  .top-20{
+    position:relative;
+    top:5vh;
+    left:13.5vh;
+
+}
+} */
+
+  @media(min-width: 400px) and (max-width: 1250px){
+
+    .title, .sub-title, .price{
+      font-size: 20px;
+ 
+      display: flex;
+      justify-content: left;
+      text-align:left;
+     
+    }
+
+    .large-font{
+      font-size:xxx-large;
+    }
+    .top-20{
+      position:relative;
+      top:4vh;
+      left:95px;
+    }
+
+  }
+
+  
+  @media (max-width: 650px){
+  
+    body{
+
+      margin: 0.5rem;
+      padding: 0.5rem;
+      
+    }
+
+
+  }
+
+  @media (max-width: 400px){
+
+    .flip-card {
+      border: none;
+      width: 250px;
+      height: 350px;   
+    }
+
+    .flip-card-front, .flip-card-back {
+      position: absolute;
+      width: 250px;
+      height: 350px; 
+     
+    }
+
+    body{
+      padding: 1rem;
+    }
+
+
+    .title, .sub-title, .price{
+      font-size: 18px;
+      font-weight: bolder;
+      display: flex;
+      justify-content: left;
+      text-align:left;
+
+  }
+
+  .large-font{
+    font-size:xxx-large;
+  }
+  .top-20{
+    position:relative;
+    top:4vh;
+    left:85px;
+  }
+
+  }
+
+
+
+
+  
