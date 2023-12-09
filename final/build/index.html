@@ -14,39 +14,41 @@
     <br>
 
     <!--Card micro-interaction-->
+    <div class="interaction_box">
+        <div class="card_hit_area">
+            <div class="flip-card">
+                
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="images/assassins_creed.png" alt="assassins_creed">
+                    </div>
 
-    <div class="flip-card">
-        
-      <div class="flip-card-inner">
-        <div class="flip-card-front">
-          
-            <img src="images/assassins_creed.png" alt="assassins_creed"></div>
+                    <div class="flip-card-back">
 
-        <div class="flip-card-back">
+                        <div class='large-font text-center top-20'>
+                            <ion-icon name="heart">
+                            <div class='red-bg'></div>
+                            </ion-icon>
+                        </div>
 
-            <div class='large-font text-center top-20'>
-                <ion-icon name="heart">
-                  <div class='red-bg'></div>
-                </ion-icon>
-              </div>
+                        <div class="floating">
+                            <img id="windowsIcon" class="windows" src="images/windows.png" alt="windows">
+                          </div>
+            
 
-            <div class="floating">
-            <img class="windows" src="images/windows.png" alt="windows">
+                        <div class="card_info">
+                        <p class="title">Assassins Creed</p> 
+                        <p class="sub-title">Standard Edition</p> 
+                          <div class="price-container">
+                                <p class="price">$49.99</p>
+                          </div>
+                    </div>
+
+                    </div>
+                </div>
             </div>
-   
-
-            <div class="card_info">
-          <p class="title">Assassins Creed</p> 
-          <p class="sub-title">Standard Edition</p> 
-          <div class="price-container">
-            <p class="price">$49.99</p>
-          </div>
         </div>
-
         </div>
-      </div>
-    </div>
-
     
      <!--Micro-interaction details-->
      <br>
@@ -111,7 +113,7 @@
     
     <h4>Windows Icon -  Hover off:<h4>
             <ul>
-                <li><p>Animation stops and the windows icon returns it to the original position in its original state.</p></li>
+                <li><p>The animation smoothly finishes its current cycle before bringing the windows icon back to its initial position in its original state.</p></li>
             </ul>
     
     <h4>Price Area Element - Hover on:</h4>
@@ -175,11 +177,11 @@
                         <li><p>Additionally, a radial shadow effect is triggered on hover, adding a glowing appearance(white color and a blur radius of 30 pixels).</p></li>
                     </ul>
     
-    <h4>Windows Icon -  Hover off:<h4>
-            <ul>
-                <li><p>Animation stops and the windows icon returns it to the original position in its original state.</p></li>
-            </ul>
-    
+                <h4>Windows Icon -  Hover off:<h4>
+                     <ul>
+                        <li><p>The animation smoothly finishes its current cycle before bringing the windows icon back to its initial position in its original state.</p></li>
+                     </ul>
+
     <h4>Price Area Element - Hover on:</h4>
     <ul>
         <li><p>Price text element color changes to golden beige on hover (smoothly transitions with a duration of 0.5 seconds).</p></li>
@@ -227,9 +229,21 @@
     icon.onclick = function(){
       icon.classList.toggle('active');
     }
+    document.addEventListener('DOMContentLoaded', function () {
+  const windowsIcon = document.getElementById('windowsIcon');
+
+  windowsIcon.addEventListener('mouseover', function () {
+    windowsIcon.classList.add('float-animation');
+  });
+
+  windowsIcon.addEventListener('animationiteration', function () {
+    windowsIcon.classList.remove('float-animation');
+  });
+});
+
     </script>
     
-    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"> </script>
 
 </body>
 
